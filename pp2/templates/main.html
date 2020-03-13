@@ -26,6 +26,7 @@
 		</div>
 		<div id="map">地图</div>
 		<div id="tim">时间</div>
+		<div id="move">全国曲线图</div>
     <script>
         function get_time() {
             $.ajax({
@@ -33,11 +34,11 @@
                 timeout:10000,
                 success:function (data) {
                     $("#tim").html(data)
-                },
-                error:function () {
-                    alert("失败")
-                }
-			})
+        },
+        error:function () {
+            alert("失败")
+        }
+        })
         }
         setInterval(get_time,1000)
     </script>

@@ -54,7 +54,15 @@ body{
 	width: 60%;
 	height: 60%;
 	top: 40%;
-	left: 20%;
+	left: 40%;
+	background: #177199;
+}
+#move{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 40%;
+	left: 0%;
 	background: #177199;
 }
 #tim{
