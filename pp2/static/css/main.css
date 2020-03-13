@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: #177199;
+	background: black;
 }
 #title{
 	position: absolute;
@@ -16,27 +16,53 @@ body{
 	align-items: center;
 	justify-content: center;
 }
-#data{
+#data1{
 	position: absolute;
 	width: 60%;
-	height: 20%;
+	height: 15%;
 	top: 10%;
 	left: 20%;
 	background: #177199;
 }
+#data2{
+	position: absolute;
+	width: 60%;
+	height: 15%;
+	top: 25%;
+	left: 20%;
+	background: #177199;
+}
+.num {
+	width: 33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: orange;
+	font-size: 40px;
+}
+.txt {
+	width: 33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
 #map{
 	position: absolute;
 	width: 60%;
-	height: 70%;
-	top: 30%;
+	height: 60%;
+	top: 40%;
 	left: 20%;
 	background: #177199;
 }
 #tim{
 	position: absolute;
-	width: 30%;
+	/*width: 30%;*/
 	height: 10%;
-	top: 0%;
-	left: 70%;
-	background: #177199;
+	top: 5%;
+	right: 2%;
+	color: white;
+	font-size: 20px;
 }
