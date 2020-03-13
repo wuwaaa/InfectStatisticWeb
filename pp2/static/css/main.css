@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	background: black;
+}
+#title{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 30%;
+	background: #177199;
+	color: white;
+	font-size: 40px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#data1{
+	position: absolute;
+	width: 60%;
+	height: 15%;
+	top: 10%;
+	left: 20%;
+	background: #177199;
+}
+#data2{
+	position: absolute;
+	width: 60%;
+	height: 15%;
+	top: 25%;
+	left: 20%;
+	background: #177199;
+}
+.num {
+	width: 33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: orange;
+	font-size: 40px;
+}
+.txt {
+	width: 33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+#map{
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	top: 40%;
+	left: 40%;
+	background: #177199;
+}
+#move{
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 40%;
+	left: 0%;
+	background: #177199;
+}
+#tim{
+	position: absolute;
+	/*width: 30%;*/
+	height: 10%;
+	top: 5%;
+	right: 2%;
+	color: white;
+	font-size: 20px;
+}

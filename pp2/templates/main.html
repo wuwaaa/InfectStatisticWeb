@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>疫情监控</title>
+		<link href="../static/css/main.css" rel="stylesheet"/>
+        <script src="../static/js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div id="title">疫情显示</div>
+		<div id="data1">
+			<div class="txt"><h2>现有确诊</h2></div>
+			<div class="txt"><h2>现有疑似</h2></div>
+			<div class="txt"><h2>现有重症</h2></div>
+			<div class="num">123</div>
+			<div class="num">123</div>
+			<div class="num">123</div>
+		</div>
+		<div id="data2">
+			<div class="txt"><h2>累计确诊</h2></div>
+			<div class="txt"><h2>累计治愈</h2></div>
+			<div class="txt"><h2>累计死亡</h2></div>
+			<div class="num">123</div>
+			<div class="num">123</div>
+			<div class="num">123</div>
+		</div>
+		<div id="map">地图</div>
+		<div id="tim">时间</div>
+		<div id="move">全国曲线图</div>
+    <script>
+        function get_time() {
+            $.ajax({
+                url:"/time",
+                timeout:10000,
+                success:function (data) {
+                    $("#tim").html(data)
+        },
+        error:function () {
+            alert("失败")
+        }
+        })
+        }
+        setInterval(get_time,1000)
+    </script>
+	</body>
+</html>

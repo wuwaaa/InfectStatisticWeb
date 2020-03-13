@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疫情追踪</title>
+    <script src="../static/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <h1>疫情追踪</h1>
+    <button>按钮</button>
+    <script>
+        $("button").click(function () {
+            $.ajax({
+                url:"/ajax",
+                type:"post",
+                data:{"data1":"111"},
+                success:function () {
+                        window.location.href = 'image';
+                },error:function () {
+                    alert("失败")
+                }
+            })
+        })
+    </script>
+</body>
+</html>
