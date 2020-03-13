@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	background: #177199;
+}
+#title{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 30%;
+	background: #177199;
+	color: white;
+	font-size: 40px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#data{
+	position: absolute;
+	width: 60%;
+	height: 20%;
+	top: 10%;
+	left: 20%;
+	background: #177199;
+}
+#map{
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	top: 30%;
+	left: 20%;
+	background: #177199;
+}
+#tim{
+	position: absolute;
+	width: 30%;
+	height: 10%;
+	top: 0%;
+	left: 70%;
+	background: #177199;
+}
