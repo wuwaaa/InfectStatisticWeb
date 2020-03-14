@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+from flask import jsonify
 import utils
 
 app = Flask(__name__)
@@ -13,6 +14,11 @@ def hello_world():
 @app.route('/time')
 def get_time():
     return utils.get_time()
+
+@app.route('/data')
+def get_main_data():
+    data = utils.get_main_data()
+    return jsonify({"nowcon": data[0], "nowsus": data[1], "nowbad": data[2], "totcon": data[3], "totheal": data[4], "totdead": data[5]})
 
 
 @app.route('/ass')
