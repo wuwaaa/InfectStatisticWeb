@@ -8,7 +8,7 @@ body{
 	height: 10%;
 	top: 0;
 	left: 30%;
-	background: #177199;
+	//background: #177199;
 	color: white;
 	font-size: 40px;
 	
@@ -22,7 +22,7 @@ body{
 	height: 15%;
 	top: 10%;
 	left: 20%;
-	background: #177199;
+	//background: #177199;
 }
 #data2{
 	position: absolute;
@@ -30,7 +30,7 @@ body{
 	height: 15%;
 	top: 25%;
 	left: 20%;
-	background: #177199;
+	//background: #177199;
 }
 .num {
 	width: 33%;
@@ -56,7 +56,7 @@ body{
 	top: 40%;
 	left: 40%;
 }
-#move{
+#graph{
 	position: absolute;
 	width: 40%;
 	height: 60%;

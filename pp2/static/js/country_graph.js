@@ -1,5 +1,3 @@
-
-
 var country_graph = echarts.init(document.getElementById('graph'),"dark");
 
 var country_graph_Option ={
@@ -59,4 +57,4 @@ var country_graph_Option ={
         }
     ]
 }
- country_graph.setOption(country_graph_Option);
+country_graph.setOption(country_graph_Option);

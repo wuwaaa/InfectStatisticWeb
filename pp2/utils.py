@@ -55,5 +55,10 @@ def get_map_data():
     res = query(sql)
     return res
 
+def get_graph_data():#获取中国曲线图所需疫情数据
+    sql="select ds,confirm,confirm_add,heal,dead from country_history "
+    res=query(sql)
+    return res
+
 if __name__ == "__main__":
-    print (get_map_data())
+    print (get_graph_data())
