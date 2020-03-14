@@ -11,6 +11,14 @@ app = Flask(__name__)
 def hello_world():
     return render_template("main.html")
 
+@app.route('/map')
+def get_map_data():
+    res = []
+    for tup in utils.get_map_data():
+        print(tup)
+        res.append({"name":tup[0],"value":int(tup[1])})
+    return jsonify({"data":res})
+
 @app.route('/time')
 def get_time():
     return utils.get_time()

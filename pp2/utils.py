@@ -47,5 +47,13 @@ def get_main_data():
     res = query(sql)
     return res[0]
 
+def get_map_data():
+    """
+    :return:读取地图数据
+    """
+    sql= "select province,confirm from province_history"
+    res = query(sql)
+    return res
+
 if __name__ == "__main__":
-    print (get_main_data())
+    print (get_map_data())

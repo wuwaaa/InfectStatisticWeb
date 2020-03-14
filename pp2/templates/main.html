@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>疫情监控</title>
-		<link href="../static/css/main.css" rel="stylesheet"/>
         <script src="../static/js/jquery-3.4.1.js"></script>
+        <script src="../static/js/echarts.js"></script>
+        <script src="../static/js/china.js"></script>
+        <link href="../static/css/main.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div id="title">疫情显示</div>
@@ -27,39 +29,8 @@
 		<div id="map">地图</div>
 		<div id="tim">时间</div>
 		<div id="move">全国曲线图</div>
-    <script>
-        function get_time() {
-            $.ajax({
-                url:"/time",
-                timeout:10000,
-                success:function (data) {
-                    $("#tim").html(data)
-        },
-        error:function () {
-            alert("失败")
-        }
-        })
-        }
-
-        function get_main_data(){
-            $.ajax({
-                url: "/data",
-                success:function (data) {
-                    $(".num h1").eq(0).text(data.nowcon);
-                    $(".num h1").eq(1).text(data.nowsus);
-                    $(".num h1").eq(2).text(data.nowbad);
-                    $(".num h1").eq(3).text(data.totcon);
-                    $(".num h1").eq(4).text(data.totheal);
-                    $(".num h1").eq(5).text(data.totdead);
-                },
-                error:function () {
-                    alert("失败")
-                }
-            })
-        }
-
-        setInterval(get_time,1000)
-        setInterval(get_main_data,1000)
-    </script>
+        <script src="../static/js/ec_china.js"></script>
+        <script src="../static/js/country_graph.js"></script>
+    <script src="../static/js/controller.js"></script>
 	</body>
 </html>
