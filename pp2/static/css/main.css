@@ -8,7 +8,7 @@ body{
 	height: 10%;
 	top: 0;
 	left: 30%;
-	background: #177199;
+	//background: #177199;
 	color: white;
 	font-size: 40px;
 	
@@ -22,7 +22,7 @@ body{
 	height: 15%;
 	top: 10%;
 	left: 20%;
-	background: #177199;
+	//background: #177199;
 }
 #data2{
 	position: absolute;
@@ -30,7 +30,7 @@ body{
 	height: 15%;
 	top: 25%;
 	left: 20%;
-	background: #177199;
+	//background: #177199;
 }
 .num {
 	width: 33%;
@@ -39,7 +39,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	color: orange;
-	font-size: 40px;
+	font-size: 12px;
 }
 .txt {
 	width: 33%;
@@ -55,9 +55,8 @@ body{
 	height: 60%;
 	top: 40%;
 	left: 40%;
-	background: #177199;
 }
-#move{
+#graph{
 	position: absolute;
 	width: 40%;
 	height: 60%;

@@ -11,14 +11,15 @@ def get_conn():
     :return: ；连接，游标
     """
     #创建连接
-    conn = pymysql.connect(host="",
-                           user="",
-                           password="",
-                           db="",
-                           charset="utf-8")
+    conn = pymysql.connect(host="localhost",
+                           port=3306,
+                           user="root",
+                           password="123456",
+                           db="covtest",
+                           charset="utf8")
     #创建游标
     cursor = conn.cursor()#返回的结果默认以元组显示
-    return cursor
+    return conn,cursor
 
 def close_conn(conn,cursor):
     cursor.close()
@@ -41,10 +42,23 @@ def get_main_data():
     """
     :return: 返回显示的数据
     """
-    sql = "select sum(confirm)"\
-    "(select  form  *order by "\
+    sql= "select nowConfirm,suspect,nowSevere,confirm,heal,dead from country_now"
 
-    pass
+    res = query(sql)
+    return res[0]
+
+def get_map_data():
+    """
+    :return:读取地图数据
+    """
+    sql= "select province,confirm from province_history"
+    res = query(sql)
+    return res
+
+def get_graph_data():#获取中国曲线图所需疫情数据
+    sql="select ds,confirm,confirm_add,heal,dead from country_history "
+    res=query(sql)
+    return res
 
 if __name__ == "__main__":
-    print (get_time())
+    print (get_graph_data())
